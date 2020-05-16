@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
                 login,
                 senha
         ).addOnSuccessListener((result) -> {
+            Toast.makeText(
+                    this,
+                    getString(R.string.login_sucesso),
+                    Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, ChatActivity.class);
+            startActivity(intent);
 
         }).addOnFailureListener((error) -> {
             Toast.makeText(
