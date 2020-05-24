@@ -9,34 +9,64 @@
     android:orientation="vertical"
     >
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/titulo_categoria"
+        android:textSize="18sp" />
+
+
     <Button
         android:id="@+id/cinema"
-        android:onClick="botaoCinema"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cinema">
-    </Button>
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="botaoCinema"
+        android:text="Cinema"
+        android:textColor="@android:color/white" />
+
     <Button
         android:id="@+id/novidades"
-        android:onClick="botaoNovidades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Novidades">
-    </Button>
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="botaoNovidades"
+        android:text="Novidades"
+        android:textColor="@android:color/white"/>
+
     <Button
         android:id="@+id/tecnologia"
-        android:onClick="botaoTecnologia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tecnologia">
-    </Button>
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="botaoTecnologia"
+        android:text="Tecnologia"
+        android:textColor="@android:color/white"/>
+
     <Button
         android:id="@+id/economia"
-        android:onClick="botaoEconomia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Economia">
-    </Button>
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="botaoEconomia"
+        android:text="Economia"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/esportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="botaoEsportes"
+        android:text="Esportes"
+        android:textColor="@android:color/white"/>
 
 
 

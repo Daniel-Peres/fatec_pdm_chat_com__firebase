@@ -9,4 +9,5 @@
     <string name="cadastro_falha">Cadastro falhou. Tente novamente mais tarde.</string>
     <string name="login_falhou">Falha no login</string>
     <string name="login_sucesso">Login realizado com sucesso</string>
+    <string name="titulo_categoria">Selecione a Categoria</string>
 </resources>

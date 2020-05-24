@@ -36,4 +36,8 @@ public class CategoriaActivity extends AppCompatActivity {
     public void botaoEconomia (View view){
         iniciaChat("economia");
     }
+
+    public void botaoEsportes (View view){
+        iniciaChat("esportes");
+    }
 }

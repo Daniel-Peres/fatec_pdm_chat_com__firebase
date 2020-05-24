@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -63,6 +64,7 @@ public class ChatActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         setupFirebase(getCategoria());
+        Toast.makeText(this, "Chat sobre " + getCategoria(), Toast.LENGTH_SHORT).show();
     }
 
     public String getCategoria(){
