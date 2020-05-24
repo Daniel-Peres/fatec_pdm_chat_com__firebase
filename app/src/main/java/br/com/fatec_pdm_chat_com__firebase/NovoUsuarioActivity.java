@@ -23,7 +23,6 @@ public class NovoUsuarioActivity extends AppCompatActivity {
 
         loginNovoUsuarioEditText = findViewById(R.id.loginNovoUsuarioEditText);
         senhaNovoUsuarioEditText = findViewById(R.id.senhaNovoUsuarioEditText);
-
         firebaseAuth = FirebaseAuth.getInstance();
     }
 
