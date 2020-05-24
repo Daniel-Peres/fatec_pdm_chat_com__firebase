@@ -1,6 +1,6 @@
 package br.com.fatec_pdm_chat_com__firebase;
 
-import java.sql.Date;
+import java.util.Date;
 import java.text.SimpleDateFormat;
 
 class DateHelper {

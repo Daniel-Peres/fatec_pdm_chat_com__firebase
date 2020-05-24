@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriaActivity"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/cinema"
+        android:onClick="botaoCinema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cinema">
+    </Button>
+    <Button
+        android:id="@+id/novidades"
+        android:onClick="botaoNovidades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Novidades">
+    </Button>
+    <Button
+        android:id="@+id/tecnologia"
+        android:onClick="botaoTecnologia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tecnologia">
+    </Button>
+    <Button
+        android:id="@+id/economia"
+        android:onClick="botaoEconomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Economia">
+    </Button>
+
+
+
+
+</LinearLayout>

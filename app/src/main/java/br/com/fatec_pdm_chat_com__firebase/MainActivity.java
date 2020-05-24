@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         loginEditText = findViewById(R.id.loginEditText);
         senhaEditText = findViewById(R.id.senhaEditText);
-
         firebaseAuth = FirebaseAuth.getInstance();
     }
 
@@ -42,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
                     this,
                     getString(R.string.login_sucesso),
                     Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, ChatActivity.class);
+            Intent intent = new Intent(this, CategoriaActivity.class);
             startActivity(intent);
 
         }).addOnFailureListener((error) -> {
             Toast.makeText(
                     this,
                     getString(R.string.login_falhou),
-                    Toast.LENGTH_SHORT).show();
+                    Toast.LENGTH_LONG).show();
         });
     }
 }
