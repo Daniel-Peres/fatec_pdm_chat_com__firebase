@@ -68,7 +68,4 @@
         android:text="Esportes"
         android:textColor="@android:color/white"/>
 
-
-
-
 </LinearLayout>
