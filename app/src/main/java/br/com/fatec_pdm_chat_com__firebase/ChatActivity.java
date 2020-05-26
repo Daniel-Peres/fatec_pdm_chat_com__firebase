@@ -94,12 +94,17 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     public void enviarMensagem (View view){
-        String mensagem = mensagemEditText.getText().toString();
-        Mensagem m = new Mensagem (fireUser.getEmail(), new Date(),
-                mensagem);
-        esconderTeclado(view);
-        mMsgsReference.add(m);
-        mensagemEditText.setText("");
+        if(mensagemEditText.getText().toString().isEmpty()){
+            Toast.makeText(this, "Por favor digite uma mensagem", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            String mensagem = mensagemEditText.getText().toString();
+            Mensagem m = new Mensagem (fireUser.getEmail(), new Date(),
+                    mensagem);
+            esconderTeclado(view);
+            mMsgsReference.add(m);
+            mensagemEditText.setText("");
+        }
     }
 
     private void esconderTeclado (View v){
