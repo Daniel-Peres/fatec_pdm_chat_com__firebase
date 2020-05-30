@@ -103,7 +103,7 @@ public class ChatActivity extends AppCompatActivity {
                     mensagem);
             esconderTeclado(view);
             mMsgsReference.add(m);
-            mensagemEditText.setText("");
+            mensagemEditText.getText().clear();
         }
     }
 
@@ -141,7 +141,7 @@ class ChatAdapter extends RecyclerView.Adapter <ChatViewHolder>{
                 context.getString(
                         R.string.mensagem,
                         DateHelper.format(m.getData()),
-                        m.getUsuario().toString()
+                        m.getUsuario()
                 )
         );
     }

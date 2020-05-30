@@ -1,6 +1,7 @@
 package br.com.fatec_pdm_chat_com__firebase;
 
 import java.util.Date;
+
 class Mensagem implements Comparable <Mensagem>{
     private String usuario;
     private Date data;

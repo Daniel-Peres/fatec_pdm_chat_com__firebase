@@ -16,7 +16,6 @@
         android:text="@string/titulo_categoria"
         android:textSize="18sp" />
 
-
     <Button
         android:id="@+id/cinema"
         android:layout_width="match_parent"
